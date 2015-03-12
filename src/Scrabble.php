@@ -3,7 +3,7 @@
         class Scrabble
       {
 
-            function score($split_input)
+            function score($input)
           {
 
                 $score1 = array("a", "e", "i", "o", "u", "l", "n", "r", "s", "t");
@@ -14,7 +14,9 @@
                 $score8 = array("j", "x");
                 $score10 = array("q", "z");
 
+                $split_input = str_split($input);
                 $score = 0;
+
                 foreach($split_input as $letter){
                     if(in_array($letter, $score1)){
                         $score = $score+1;
