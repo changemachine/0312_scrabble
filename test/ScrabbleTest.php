@@ -7,8 +7,14 @@
         {
             //Arrange
             $test_Scrabble = new Scrabble;
+            $input = "z";
 
-            $this->assertEquals();
+            //Act
+            $result = $test_Scrabble->score($input);
+
+            //Assert
+
+            $this->assertEquals($result, "10");
         }
     }
 
