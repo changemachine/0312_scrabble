@@ -12,12 +12,11 @@
 
      });
 
-     $app-get("/form", function() use ($app) {
+     $app->get("/home", function() use ($app) {
          return $app['twig']->render('form.twig');
 
      });
 
-
-
+     return $app
 
 ?>
