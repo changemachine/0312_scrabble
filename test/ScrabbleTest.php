@@ -7,10 +7,11 @@
         {
             //Arrange
             $test_Scrabble = new Scrabble;
-            $input = array("a");
+            $input = "a";
+            $split_input = str_split($input);
 
             //Act
-            $result = $test_Scrabble->score($input);
+            $result = $test_Scrabble->score($split_input);
 
             //Assert
 
@@ -21,10 +22,11 @@
         {
             //Arrange
             $test_Scrabble = new Scrabble;
-            $input = array("aa");
+            $input = "d";
+            $split_input = str_split($input);
 
             //Act
-            $result = $test_Scrabble->score($input);
+            $result = $test_Scrabble->score($split_input);
 
             //Assert
 
