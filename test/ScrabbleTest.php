@@ -16,6 +16,20 @@
 
             $this->assertEquals($result, "10");
         }
+
+        function test_Scrabble2()
+        {
+            //Arrange
+            $test_Scrabble = new Scrabble;
+            $input = "zz";
+
+            //Act
+            $result = $test_Scrabble->score($input);
+
+            //Assert
+
+            $this->assertEquals($result, "20");
+        }
     }
 
 ?>
