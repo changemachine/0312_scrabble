@@ -12,6 +12,10 @@
 
      });
 
+     $app-get("/form", function() use ($app) {
+         return $app['twig']->render('form.twig');
+
+     });
 
 
 

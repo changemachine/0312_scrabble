@@ -22,7 +22,7 @@
         {
             //Arrange
             $test_Scrabble = new Scrabble;
-            $input = "d";
+            $input = "ad";
             $split_input = str_split($input);
 
             //Act
@@ -30,7 +30,7 @@
 
             //Assert
 
-            $this->assertEquals(2, $result);
+            $this->assertEquals(3, $result);
         }
     }
 
