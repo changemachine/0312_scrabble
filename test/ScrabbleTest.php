@@ -7,28 +7,28 @@
         {
             //Arrange
             $test_Scrabble = new Scrabble;
-            $input = "z";
+            $input = array("a");
 
             //Act
             $result = $test_Scrabble->score($input);
 
             //Assert
 
-            $this->assertEquals($result, "10");
+            $this->assertEquals(1, $result);
         }
 
         function test_Scrabble2()
         {
             //Arrange
             $test_Scrabble = new Scrabble;
-            $input = "zz";
+            $input = array("aa");
 
             //Act
             $result = $test_Scrabble->score($input);
 
             //Assert
 
-            $this->assertEquals($result, "20");
+            $this->assertEquals(2, $result);
         }
     }
 
