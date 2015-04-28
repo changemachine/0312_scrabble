@@ -2,7 +2,7 @@
 ## by James Nielson and Geoff Winner
 ### Date: March 11, 2015
 #### Description
-Gives a scrabble score for the word entered.
+Checks an entered word against the Scrabble dictionary and returns the word's natural score (not counting bonuses).
 
 #### Setup instructions
 1. Clone this git repository
